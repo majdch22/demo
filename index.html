@@ -1,23 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Token Display Page</title>
-    <script>
-        function getToken() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const token = urlParams.get('token');
-            if (token) {
-                document.getElementById('token').innerText = token;
-            } else {
-                document.getElementById('token').innerText = 'No token found in the URL.';
-            }
-        }
-    </script>
+    <title>Test Page</title>
 </head>
-<body onload="getToken()">
-    <h1>Token Display Page</h1>
-    <p id="token">Loading token...</p>
+<body>
+    <a href="https://vulnerable.com/vulnerable.html" target="_blank">Go to Vulnerable Page</a>
 </body>
 </html>
+
