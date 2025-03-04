@@ -4,6 +4,11 @@
     <title>Redirected</title>
 </head>
 <body>
-    <h1>You have been redirected here!</h1>
+    <?php
+if(!empty($_GET['cookie'])) {
+	echo $_GET['cookie'];
+}
+?>
+
 </body>
 </html>
